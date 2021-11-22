@@ -1,0 +1,72 @@
+/* Imports Montserrat font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+  margin: 0;
+}
+
+header {
+  background-color: #0B1C51;
+  margin-bottom: 40px;
+}
+
+header h1 {
+  font-size: 52px;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+}
+
+header nav ul {
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  /* Removes margin from top, bottom, and left. Pushes margin 20px to the right */
+  margin: 0 20px 0 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+header nav ul li:last-child a {
+  /* Removes the margin to the right of "Contact" so that the nav appears centered */
+  margin-right: 0;
+}
+
+h1 {
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  padding-top: 20px;
+}
+
+header nav ul li a:hover {
+  color: #bdbdbd;
+}
+
+@media all and (min-width: 700px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+  }
+
+  header h1 {
+    margin: 14px 0;
+    padding-top: 0;
+    font-size: 48px;
+  }
+
+  header nav {
+    margin-top: 8px;
+  }
+
+  header nav ul {
+    padding: 10px 10px 0 0;
+  }
+}
